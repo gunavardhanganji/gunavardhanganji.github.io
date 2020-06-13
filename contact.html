@@ -21,10 +21,10 @@
 
 <body>
     <!-- Navigation -->
-    <nav class='navbar navbar-custom navbar-expand-sm fixed-top'>
+    <nav class='navbar navbar-expand-sm'>
         <div class='container'>
             <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#Navbar'>
-                <span class='navbar-toggler-icon'></span>                
+                <span class='navbar-toggler-icon'><i class="fa fa-ellipsis-v fa-lg" aria-hidden="true"></i></span>                
             </button>
             <a class='navbar-brand' href='#'>
                <img src='img/logo_new.png' height="60" width="71">
@@ -40,38 +40,41 @@
         </div>
     </nav>
     <header class='jumbotron jumbotron-fluid bg-white'>
+        <div class='container'>
+            <div class='col-12 offset-sm-3 col-sm-6 align-self-center'>
+                <form>
+                    <div class="form-group row">
+                        <dd class="col-12 col-sm-12 text-secondary" style='font-size: small;'>Email*</dd>
+                        <div class='col-12 col-sm-12'>
+                            <input type='text' class='form-control' id='email' name='email'>
+                        </div>
+                    </div>            
+                    <div class="form-group row">
+                        <dd class="col-12 col-sm-12 text-secondary" style='font-size: small;'>Subject*</dd>
+                        <div class='col-12 col-sm-12'>
+                            <input type='text' class='form-control' id='subject' name='subject'>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <dd class="col-12 col-sm-12 text-secondary" style='font-size: small;'>Message*</dd>
+                        <div class='col-12 col-sm-12'>
+                            <textarea class='form-control' id='message' name='message'
+                                rows='7'></textarea>
+                        </div>            
+                    </div>                       
+                    <div class="row form-group">        
+                        <div class='col col-sm-5 align-self-center'>
+                            <a class="btn btn-success text-white"><span class="fa fa-send"></span> Send</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p><br></p>
+                    </div> 
+                </form>
+            </div>
+        </div>
     </header>
-    <div class='col-12 offset-sm-3 col-sm-6 align-self-center'>
-        <form>
-            <div class="form-group row">
-                <dd class="col-12 col-sm-12 text-secondary" style='font-size: small;'>Email*</dd>
-                <div class='col-12 col-sm-12'>
-                    <input type='text' class='form-control' id='email' name='email'>
-                </div>
-            </div>            
-            <div class="form-group row">
-                <dd class="col-12 col-sm-12 text-secondary" style='font-size: small;'>Subject*</dd>
-                <div class='col-12 col-sm-12'>
-                    <input type='text' class='form-control' id='subject' name='subject'>
-                </div>
-            </div>
-            <div class="form-group row">
-                <dd class="col-12 col-sm-12 text-secondary" style='font-size: small;'>Message*</dd>
-                <div class='col-12 col-sm-12'>
-                    <textarea class='form-control' id='message' name='message'
-                        rows='7'></textarea>
-                </div>            
-            </div>                       
-            <div class="row form-group">        
-                <div class='col col-sm-5 align-self-center'>
-                    <a class="btn btn-success text-white"><span class="fa fa-send"></span> Send</a>
-                </div>
-            </div>
-            <div>
-                <p><br></p>
-            </div> 
-        </form>
-    </div>
+    
 
     <footer class="footer">
         <div class="container" id='contactme'>
@@ -93,6 +96,9 @@
         </div>
         
     </footer>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
     crossorigin="anonymous"></script>
